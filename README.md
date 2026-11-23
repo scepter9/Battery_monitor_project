@@ -1,4 +1,4 @@
-```markdown
+
 # BattSense: Smart Battery Health Monitoring System
 
 ## Introduction
