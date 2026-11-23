@@ -23,7 +23,7 @@ The project also provides an opportunity to gain practical experience in custom 
 
 The system is built around three primary measurements:
 
-- **Voltage**: Measures the battery's terminal voltage.
+- **Voltage**: Measures the battery’s terminal voltage.
 - **Current**: Measures the current flowing through an external test load.
 - **Temperature**: Monitors battery temperature using an external NTC thermistor.
 
@@ -35,11 +35,11 @@ The STM32F103C8 was selected as the main controller because of its processing ca
 
 It is based on the ARM Cortex-M3 architecture and supports features such as:
 
-- 12-bit ADC for analogue measurements.
-- GPIO for interfacing with external components.
-- I²C for communication with compatible peripherals.
-- SPI and USART communication interfaces.
-- SWD for programming and debugging.
+- 12-bit ADC for analogue measurements
+- GPIO for interfacing with external components
+- I²C for communication with compatible peripherals
+- SPI and USART communication interfaces
+- SWD for programming and debugging
 
 The ADC is particularly important to this project because it allows the microcontroller to read analogue signals from the voltage measurement circuit and temperature sensor.
 
@@ -47,9 +47,9 @@ The ADC is particularly important to this project because it allows the microcon
 
 Battery voltage is measured using a resistive voltage divider.
 
-The divider consists of two resistors connected in series across the battery terminals. It scales the battery voltage down to a level suitable for the STM32's ADC input.
+The divider consists of two resistors connected in series across the battery terminals. It scales the battery voltage down to a level suitable for the STM32’s ADC input.
 
-This is necessary because the STM32 operates at 3.3V logic levels, and its ADC input must remain within the permitted voltage range.
+This is necessary because the STM32 operates at 3.3 V logic levels, and its ADC input must remain within the permitted voltage range.
 
 The microcontroller reads the divided voltage and calculates the original battery voltage using the voltage divider ratio.
 
@@ -67,13 +67,13 @@ For this project, the battery supplies an external test load, with the current f
 
 ### Temperature Measurement
 
-Battery temperature is measured using an external 10kΩ NTC thermistor.
+Battery temperature is measured using an external 10 kΩ NTC thermistor.
 
 Instead of mounting the thermistor directly on the PCB, a dedicated two-pin connector is provided for connecting the external temperature sensor.
 
 The thermistor works with a fixed resistor to form a voltage divider. Since an NTC thermistor decreases in resistance as temperature increases, the voltage across the divider changes with temperature.
 
-This analogue voltage is read by the STM32 ADC, and the microcontroller uses the thermistor's characteristics to estimate the temperature.
+This analogue voltage is read by the STM32 ADC, and the microcontroller uses the thermistor’s characteristics to estimate the temperature.
 
 The connector arrangement allows the temperature sensor to be positioned closer to the battery being monitored.
 
@@ -107,21 +107,21 @@ The schematic and PCB layout are included in the project repository to make the 
 
 The major components used in the design include:
 
-| Component | Purpose |
-|-----------|---------|
-| STM32F103C8 | Main microcontroller |
-| INA219 | Current measurement |
-| External shunt resistor | Current sensing |
-| RC filter network | Filtering noise in the current-sensing path |
-| Two TVS diodes | Transient protection at the shunt connector |
-| 47kΩ and 10kΩ resistors | Voltage divider |
-| 10kΩ NTC thermistor | External temperature measurement |
-| Fixed resistor | Thermistor voltage divider |
-| Two-pin connector | External thermistor connection |
-| Two-pin connector | Shunt sensing connection |
-| Voltage regulators | Power supply regulation |
-| External LCD | Displaying measurement readings |
-| Jumper wires | Connecting the external LCD to the STM32 |
+| Component                  | Purpose                                      |
+|----------------------------|----------------------------------------------|
+| STM32F103C8                | Main microcontroller                         |
+| INA219                     | Current measurement                          |
+| External shunt resistor    | Current sensing                              |
+| RC filter network          | Filtering noise in the current-sensing path  |
+| Two TVS diodes             | Transient protection at the shunt connector  |
+| 47 kΩ and 10 kΩ resistors  | Voltage divider                              |
+| 10 kΩ NTC thermistor       | External temperature measurement             |
+| Fixed resistor             | Thermistor voltage divider                   |
+| Two-pin connector          | External thermistor connection               |
+| Two-pin connector          | Shunt sensing connection                     |
+| Voltage regulators         | Power supply regulation                      |
+| External LCD               | Displaying measurement readings              |
+| Jumper wires               | Connecting the external LCD to the STM32     |
 
 ## How the System Works
 
@@ -140,12 +140,12 @@ The project was designed using KiCad. The repository contains the relevant hardw
 
 The main design files include:
 
-- KiCad schematic file.
-- KiCad PCB layout file.
-- KiCad project file.
-- Schematic PDF.
-- Bill of Materials (BOM) in CSV format.
-- PCB layout and 3D render images.
+- KiCad schematic file
+- KiCad PCB layout file
+- KiCad project file
+- Schematic PDF
+- Bill of Materials (BOM) in CSV format
+- PCB layout and 3D render images
 
 These files make it possible to inspect the circuit, review component selections, modify the PCB, and continue development of the project.
 
@@ -181,4 +181,4 @@ The complete hardware design and supporting documentation are available in this 
 - **Bill of Materials**: `Hardware/Documentation/`
 - **PCB Images**: `images/`
 - **Fabrication Files**: `Hardware/Fabrication/`
-```
+
