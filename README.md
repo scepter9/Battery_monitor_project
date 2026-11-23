@@ -1,1 +1,1 @@
-# Battery_monitor_project
+# BattSense: Smart Battery Health Monitoring System
