@@ -1,0 +1,137 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "59591965-4188-40f7-bc76-379d02f5f3ad")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 77.47 105.41)
+		(size 40.64 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "01e529a9-fb64-4ac8-9741-e25766898e19")
+		(property "Sheetname" "Sensing"
+			(at 92.71 99.568 0)
+			(effects
+				(font
+					(size 2.032 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Sensing.kicad_sch"
+			(at 77.47 133.9346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Battery monitor"
+				(path "/59591965-4188-40f7-bc76-379d02f5f3ad"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 123.19 58.42)
+		(size 40.64 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7f412595-a857-4f0a-8c2c-a623cc2ab650")
+		(property "Sheetname" "Power"
+			(at 140.716 55.626 0)
+			(effects
+				(font
+					(size 2.032 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 123.19 85.6746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Battery monitor"
+				(path "/59591965-4188-40f7-bc76-379d02f5f3ad"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 161.29 106.68)
+		(size 45.72 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7fb0ca47-130b-4d34-9a8a-f272329947fc")
+		(property "Sheetname" "MCU"
+			(at 179.324 101.092 0)
+			(effects
+				(font
+					(size 2.032 2.032)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "MCU.kicad_sch"
+			(at 161.29 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Battery monitor"
+				(path "/59591965-4188-40f7-bc76-379d02f5f3ad"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
